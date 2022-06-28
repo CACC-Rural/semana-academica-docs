@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Arte",
+        "slug": "arte"
+    },
+    {
+        "name": "Captação de Palestras",
+        "slug": "captação-palestras"
+    },
+    {
+        "name": "Divulgação",
+        "slug": "divulgacao"
+    },
+    {
+        "name": "Documentação e Processos",
+        "slug": "documentacao-processos",
+        "links": [
+            {
+                "name": "Overview",
+                "href": "/doc-proc/overview.html"
+            }
+        ]
+    },
+    {
+        "name": "Jurídico e Financeiro",
+        "slug": "juridico-financeiro"
+    },
+    {
+        "name": "Live - Audiovisual",
+        "slug": "live-audiovisual"
+    },
+    {
+        "name": "Live - Infraestrutura",
+        "slug": "live-infraestrutura"
+    },
+    {
+        "name": "maratonou!",
+        "slug": "maratonou"
+    },
+    {
+        "name": "Webdev",
+        "slug": "webdev"
+    }
+]

@@ -1,0 +1,18 @@
+<nav id="navbar" class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Semana da Computação 2022 </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu"
+      aria-controls="offcanvas-menu">
+      Menu
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu" aria-labelledby="offcanvas-menuLabel" style="max-width: 270px;">
+  <div class="offcanvas-body">
+    {% include components/sidebar.html %}
+  </div>
+</div>
+<div id="sidebar" class="flex-shrink-0 p-3 bg-white" style="width: 280px;" style="padding: 0;">
+  {% include components/sidebar.html %}
+</div>

@@ -1,0 +1,24 @@
+<a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+  <span class="fs-5 fw-semibold" style="text-align: center;">
+    Semana da Computação 2022
+  </span>
+</a>
+<ul class="list-unstyled ps-0">
+  {% for team in site.data.teams %}
+  <li class="mb-1">
+    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+      data-bs-target="#{{team.slug}}-collapse" aria-expanded="false">
+      {{team.name}}
+    </button>
+    {% if team.links.size > 0 %}
+    <div class="collapse" id="{{team.slug}}-collapse">
+      {% for link in team.links %}
+      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+        <li><a href="{{link.href}}" class="link-dark d-inline-flex text-decoration-none rounded">{{link.name}}</a></li>
+      </ul>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
